@@ -1,4 +1,4 @@
-package com.demas.mk4_k1_projectbiodata
+package com.demas.mk4_k1_projectbiodata   // samakan dengan package kamu
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,51 +7,25 @@ import androidx.recyclerview.widget.RecyclerView
 
 class data_siswa : AppCompatActivity() {
 
+    private lateinit var rvSiswa: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data_siswa)
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        rvSiswa = findViewById(R.id.rvSiswa)
+        rvSiswa.layoutManager = LinearLayoutManager(this)
 
-        // DATA 34 SISWA (Ganti dengan data asli kamu!)
+        // CONTOH 5 DATA (ganti kalau mau 34 lagi)
         val listSiswa = listOf(
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //1
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //2
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //3
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //4
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //5
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //6
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //7
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //8
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //9
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //10
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //11
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //12
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //13
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //14
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //15
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //16
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //17
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //18
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //19
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //20
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //21
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //22
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //23
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //24
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //25
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //26
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //27
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //28
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //29
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //30
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //31
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //32
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //33
-            Siswa("Absari", "Absen: 1", "NIS: 541241045", "Kelas: XI PPLG 4"), //34
+            Siswa(nama = "Absari", absen = "Absen: 1", nis = "NIS: 541241045", kelas = "Kelas: XI PPLG 4"),
+            Siswa(nama = "Budi",   absen = "Absen: 2", nis = "NIS: 541241046", kelas = "Kelas: XI PPLG 4"),
+            Siswa(nama = "Citra",  absen = "Absen: 3", nis = "NIS: 541241047", kelas = "Kelas: XI PPLG 4"),
+            Siswa(nama = "Dimas",  absen = "Absen: 4", nis = "NIS: 541241048", kelas = "Kelas: XI PPLG 4"),
+            Siswa(nama = "Eka",    absen = "Absen: 5", nis = "NIS: 541241049", kelas = "Kelas: XI PPLG 4"),
         )
 
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = SiswaAdapter(listSiswa)
+        val adapter = SiswaAdapter(listSiswa)
+        rvSiswa.adapter = adapter
     }
 }

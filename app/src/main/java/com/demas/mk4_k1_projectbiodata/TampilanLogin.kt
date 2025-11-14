@@ -1,41 +1,54 @@
-package com.demas.mk4_k1_projectbiodata
+package com.demas.mk4_k1_projectbiodata   // SESUAIKAN dgn package-mu
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class TampilanLogin : AppCompatActivity() {
+
+    // username & password yang dianggap benar
+    private val correctUsername = "admin"
+    private val correctPassword = "12345"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_tampilan_login)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
-        // TAMBAHKAN KODE INI 👇
-        val txtEmail = findViewById<EditText>(R.id.txtemail)
-        val txtPassword = findViewById<EditText>(R.id.txtpassword)
-        val btnLogin = findViewById<Button>(R.id.btnlogin) // sesuaikan dengan id tombol login kamu
+        val etUsername = findViewById<EditText>(R.id.etUsername)
+        val etPassword = findViewById<EditText>(R.id.etPassword)
+        val btnLogin   = findViewById<Button>(R.id.btnLogin)
 
         btnLogin.setOnClickListener {
-            val email = txtEmail.text.toString()
-            val password = txtPassword.text.toString()
+            val username = etUsername.text.toString().trim()
+            val password = etPassword.text.toString().trim()
 
-            if (email == "demas@gmail.com" && password == "demas08") {
+            // cek kosong dulu
+            if (username.isEmpty() || password.isEmpty()) {
+                Toast.makeText(
+                    this,
+                    "Username & Password wajib diisi",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
+            }
+
+            // cek benar / salah
+            if (username == correctUsername && password == correctPassword) {
+                Toast.makeText(this, "Login berhasil", Toast.LENGTH_SHORT).show()
+
+                // pindah ke halaman data_siswa
                 val intent = Intent(this, data_siswa::class.java)
                 startActivity(intent)
-                finish()
+                finish()   // supaya tidak bisa back ke login
             } else {
-                Toast.makeText(this, "Email atau Password salah!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "Username atau Password salah",
+                    Toast.LENGTH_SHORT
+                ).show()
             }
         }
     }

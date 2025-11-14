@@ -1,0 +1,20 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background putih -->
+    <solid android:color="#FFFFFF"/>
+
+    <!-- Garis pinggir (stroke) -->
+    <stroke
+        android:width="2dp"
+        android:color="#D0D0D0" />  <!-- abu-abu muda -->
+
+    <!-- Oval / Rounded -->
+    <corners android:radius="26dp"/>
+
+    <!-- Biar isi tidak nempel pinggir -->
+    <padding
+        android:left="16dp"
+        android:right="16dp"
+        android:top="12dp"
+        android:bottom="12dp"/>
+</shape>

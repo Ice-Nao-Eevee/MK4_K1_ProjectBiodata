@@ -1,103 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TampilanLogin">
+    android:background="#E3E3E3">
 
-    <View
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="#C23636"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"></View>
-
-    <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="379dp"
-        android:layout_height="52dp"
-        android:text="LOGIN"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/txtpassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan password Anda"
-        android:inputType="textPassword"
-        android:minHeight="48dp"
-        android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
-
-    <EditText
-        android:id="@+id/txtemail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Masukkan email Anda"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/logo1"
-        android:layout_width="130dp"
-        android:layout_height="123dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/logo1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.159"
-        app:shapeAppearanceOverlay="@style/CircleImageView" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="132dp"
-        android:layout_height="54dp"
-        android:text="SMK TELKOM PURWOKERTO"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/logo2"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:scaleType="centerCrop"
+    <!-- Logo Telkom kecil (logo2.png) -->
+    <ImageView
+        android:id="@+id/logoSmall"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
         android:src="@drawable/logo2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.353"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:shapeAppearanceOverlay="@style/CircleImageView" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Logo bulat besar (logo1.png) -->
+    <ImageView
+        android:id="@+id/logoBig"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo1"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/logoSmall"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:hint="Username"
+        android:paddingLeft="24dp"
+        android:paddingTop="14dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#A3A3A3"
+        app:layout_constraintTop_toBottomOf="@id/logoBig"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_edittext_rounded"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="24dp"
+        android:paddingTop="14dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#A3A3A3"
+        app:layout_constraintTop_toBottomOf="@id/etUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tombol Login -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_button_login"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.demas.mk4_k1_projectbiodata
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,6 +29,20 @@ class SiswaAdapter(private val listSiswa: List<Siswa>) :
         holder.tvAbsen.text = siswa.absen
         holder.tvNis.text = siswa.nis
         holder.tvKelas.text = siswa.kelas
+
+        // TAMBAHAN: OnClick untuk pindah ke DetailSiswa
+        holder.itemView.setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, DetailSiswa::class.java)
+
+            // Kirim data siswa ke halaman detail
+            intent.putExtra("NAMA", siswa.nama)
+            intent.putExtra("ABSEN", siswa.absen)
+            intent.putExtra("NIS", siswa.nis)
+            intent.putExtra("KELAS", siswa.kelas)
+
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = listSiswa.size

@@ -23,6 +23,7 @@ class data_siswa : AppCompatActivity() {
             Siswa(nama = "Citra",  absen = "Absen: 3", nis = "NIS: 541241047", kelas = "Kelas: XI PPLG 4"),
             Siswa(nama = "Dimas",  absen = "Absen: 4", nis = "NIS: 541241048", kelas = "Kelas: XI PPLG 4"),
             Siswa(nama = "Eka",    absen = "Absen: 5", nis = "NIS: 541241049", kelas = "Kelas: XI PPLG 4"),
+            Siswa(nama = "Danish", absen = "Absen: 1", nis = "NIS: 541241045", kelas = "Kelas: XI PPLG 4"),
         )
 
         val adapter = SiswaAdapter(listSiswa)

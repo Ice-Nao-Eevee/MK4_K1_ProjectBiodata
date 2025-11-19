@@ -40,6 +40,8 @@ class SiswaAdapter(private val listSiswa: List<Siswa>) :
             intent.putExtra("ABSEN", siswa.absen)
             intent.putExtra("NIS", siswa.nis)
             intent.putExtra("KELAS", siswa.kelas)
+            intent.putExtra("GENDER", siswa.gender)  // TAMBAHAN
+            intent.putExtra("HOBI", siswa.hobi)      // TAMBAHAN
 
             context.startActivity(intent)
         }

@@ -6,5 +6,6 @@ data class Siswa(
     val nis: String,
     val kelas: String,
     val gender: String,
-    val hobi: String = "" // Optional, bisa kosong
+    val hobi: String = "", // Bisa Kosong
+    val foto: Int  // TAMBAHAN: ID resource foto (misal: R.drawable.absari)
 )

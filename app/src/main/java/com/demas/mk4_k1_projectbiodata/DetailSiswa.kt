@@ -2,6 +2,7 @@ package com.demas.mk4_k1_projectbiodata
 
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -17,6 +18,10 @@ class DetailSiswa : AppCompatActivity() {
         val nis = intent.getStringExtra("NIS") ?: "Tidak ada data"
         val gender = intent.getStringExtra("GENDER") ?: "Tidak ada data"
         val hobi = intent.getStringExtra("HOBI") ?: ""
+        val foto = intent.getIntExtra("FOTO", R.drawable.ic_launcher_foreground)  // TAMBAHAN
+
+        // Tampilkan foto
+        findViewById<ImageView>(R.id.imgDetailFoto).setImageResource(foto)  // TAMBAHAN
 
         // Tampilkan data
         findViewById<TextView>(R.id.tvDetailNama).text = nama

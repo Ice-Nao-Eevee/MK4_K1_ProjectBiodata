@@ -52,6 +52,13 @@
             android:textColor="#666666"
             android:padding="16dp" />
 
+        <View
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_background" />
+
         <!-- FOTO PROFIL BESAR (BULAT HITAM) -->
         <View
             android:layout_width="200dp"
@@ -59,6 +66,16 @@
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:background="@drawable/circle_background" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgDetailFoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            app:shapeAppearanceOverlay="@style/CircleImageView" />
 
         <!-- CARD INFO SISWA -->
         <androidx.cardview.widget.CardView

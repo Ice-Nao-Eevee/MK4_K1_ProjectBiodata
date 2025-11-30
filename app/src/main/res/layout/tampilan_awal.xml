@@ -42,12 +42,13 @@
         app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <Button
         android:id="@+id/btnawal"
         android:layout_width="122dp"
         android:layout_height="52dp"
+        android:backgroundTint="#C23636"
         android:text="NEXT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +81,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.129"
+        app:layout_constraintVertical_bias="0.184"
         app:shapeAppearanceOverlay="@style/CircleImageView" />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -94,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.05"
         app:shapeAppearanceOverlay="@style/CircleImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

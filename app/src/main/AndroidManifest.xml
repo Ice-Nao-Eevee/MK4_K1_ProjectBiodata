@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MK4_k1_ProjectBiodata">
         <activity
+            android:name=".DetailSiswa" />
+        <activity
             android:name=".data_siswa"
             android:exported="false" />
         <activity

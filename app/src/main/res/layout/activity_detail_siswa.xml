@@ -20,11 +20,11 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:text="BIODATA"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tvBiodataLengkap"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -40,28 +40,13 @@
             app:layout_constraintStart_toStartOf="@id/tvTitle"
             app:layout_constraintEnd_toEndOf="@id/tvTitle" />
 
-        <TextView
-            android:id="@+id/tvBiodataLengkap"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Biodata Lengkap Siswa XI PPLG 4"
-            android:textColor="#212121"
-            android:textSize="16sp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            android:background="@android:color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView
         android:id="@+id/imgProfile"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/circle_white_border_red"
         android:contentDescription="Foto Siswa"
         android:elevation="6dp"
@@ -95,80 +80,109 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nama Siswa"
-                android:textSize="14sp"
-                android:textColor="#757575" />
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/tvNamaSiswa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="NAMA SISWA LENGKAP"
+                android:textColor="#212121"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#212121" />
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:background="#EEEEEE" />
+                tools:text="NAMA SISWA LENGKAP" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EEEEEE" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Absen"
-                android:textSize="14sp"
-                android:textColor="#757575" />
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/tvAbsen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="1"
+                android:textColor="#212121"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#212121" />
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:background="#EEEEEE" />
+                tools:text="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EEEEEE" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="NIS"
-                android:textSize="14sp"
-                android:textColor="#757575" />
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/tvNIS"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="541241XXX"
+                android:textColor="#212121"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#212121" />
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:background="#EEEEEE" />
+                tools:text="541241XXX" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EEEEEE" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gender"
-                android:textSize="14sp"
-                android:textColor="#757575" />
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/tvGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="L/P"
+                android:textColor="#212121"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#212121" />
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_marginBottom="16dp" android:background="#EEEEEE" />
+                tools:text="L/P" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="#EEEEEE" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hobi"
-                android:textSize="14sp"
-                android:textColor="#757575" />
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/tvHobi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="Hobi Siswa"
+                android:textColor="#212121"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="#212121" />
+                tools:text="Hobi Siswa" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

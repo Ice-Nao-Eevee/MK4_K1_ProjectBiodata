@@ -30,7 +30,7 @@ class TampilanLogin : AppCompatActivity() {
             val email = txtEmail.text.toString()
             val password = txtPassword.text.toString()
 
-            if (email == "demas@gmail.com" && password == "demas08") {
+            if (email == "xipplg4@gmail.com" && password == "xipplg4") {
                 val intent = Intent(this, data_siswa::class.java)
                 startActivity(intent)
                 finish()

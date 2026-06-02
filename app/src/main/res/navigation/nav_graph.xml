@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.ScheduleFragment"
+        android:label="Jadwal"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/scheduleDetailFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.ScheduleDetailFragment"
+        android:label="Detail Jadwal"
+        tools:layout="@layout/fragment_schedule_detail" />
+
+    <fragment
+        android:id="@+id/studentsFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.StudentsFragment"
+        android:label="Data Siswa"
+        tools:layout="@layout/fragment_students" />
+
+    <fragment
+        android:id="@+id/classStudentsFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.ClassStudentsFragment"
+        android:label="Siswa per Kelas"
+        tools:layout="@layout/fragment_class_students" />
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.ProfileFragmentUser"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile_user" />
+
+    <fragment
+        android:id="@+id/detailSiswaFragment"
+        android:name="com.danish.aplikasibiodata_percobaan.ProfileFragment"
+        android:label="Detail Siswa"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Telkom School Hub</string>
+    <string name="nav_students">Siswa</string>
+    <string name="nav_gallery">Galeri</string>
+    <string name="nav_profile">Profil</string>
+    <string name="class_roster">Data Siswa</string>
+    <string name="roster_subtitle">Pilih tingkat, jurusan, dan kelas untuk melihat data siswa.</string>
+    <string name="search_hint">Cari nama, NIS, atau kelas...</string>
+    <string name="class_memories">School Information</string>
+    <string name="memories_subtitle">Informasi terbaru, kegiatan, dan prestasi sekolah.</string>
+    <string name="biography">Biography</string>
+    <string name="activity">Activity</string>
+    <string name="projects">Projects</string>
+    <string name="commits">Commits</string>
+    <string name="role">Role</string>
+    <string name="words_of_wisdom">WORDS OF WISDOM</string>
+    <string name="github">GitHub</string>
+    <string name="instagram">Instagram</string>
+    <string name="email">Email</string>
+    <string name="filter_all">Semua Siswa</string>
+    <string name="filter_frontend">PPLG</string>
+    <string name="filter_backend">TJKT</string>
+    <string name="filter_uiux">Kelas</string>
+    <string name="filter_mobile">Jadwal</string>
+    <string name="first_place">1st Place</string>
+    <string name="school_coding_bee">School Coding Bee</string>
+    <string name="field_trip">Field Trip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

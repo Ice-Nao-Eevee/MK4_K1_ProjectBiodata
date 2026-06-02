@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/accent_bar_bg.xml -->
+<!-- Bar merah kecil di atas judul "Class Roster" -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/primary_red" />
+    <corners android:radius="4dp" />
+</shape>

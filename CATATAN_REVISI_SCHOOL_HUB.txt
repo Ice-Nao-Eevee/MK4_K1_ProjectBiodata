@@ -1,0 +1,15 @@
+CATATAN REVISI SCHOOL HUB
+
+Perubahan final Android:
+1. Data Siswa sekarang hanya menampilkan daftar kelas scroll X, XI, XII.
+2. Tidak ada filter popup / bottom sheet / chip tingkat-jurusan-kelas lagi.
+3. Klik kelas di Data Siswa membuka halaman baru berisi list siswa kelas tersebut.
+4. Jadwal sekarang hanya menampilkan daftar kelas scroll. Klik kelas membuka halaman detail jadwal berjalan.
+5. Profil menu bawah sekarang menampilkan akun login sendiri dari session/API /me.
+6. Jika login memakai NIS 541241042, profil fallback diarahkan ke Danish Adelio / XI PPLG 4 jika backend belum mengirim classroom lengkap.
+7. Android tetap terhubung ke Laravel lewat RetrofitClient.kt.
+
+Catatan run:
+- Jika pakai HP asli, BASE_URL di RetrofitClient.kt wajib pakai IP laptop, contoh http://192.168.1.46:8000/api/
+- Jika pakai emulator Android Studio, BASE_URL gunakan http://10.0.2.2:8000/api/
+- Laravel jalankan dengan: php artisan serve --host=0.0.0.0 --port=8000

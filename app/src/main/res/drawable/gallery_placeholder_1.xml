@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- gallery_placeholder_1.xml - use as all 7 gallery placeholders with different colors -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#BDBDBD" />
+    <corners android:radius="10dp" />
+</shape>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_activity"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/studentsFragment"
+        android:icon="@drawable/ic_students"
+        android:title="Siswa" />
+
+    <item
+        android:id="@+id/scheduleFragment"
+        android:icon="@drawable/ic_activity"
+        android:title="Jadwal" />
+
+    <item
+        android:id="@+id/galleryFragment"
+        android:icon="@drawable/ic_gallery"
+        android:title="Galeri" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profil" />
+
+</menu>

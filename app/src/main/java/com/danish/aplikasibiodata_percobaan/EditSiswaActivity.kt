@@ -66,7 +66,7 @@ class EditSiswaActivity : AppCompatActivity() {
 
         // Cek apakah dia wali kelas sah dan apakah ID kelasnya cocok dengan kelas si murid
         if (userRole != "wali_kelas" || walasClassroomId != studentClassroomId) {
-            Toast.makeText(this, "Ngapain lu su? Ini bukan anak didik di kelas lu! 🙅‍♂️❌", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Anda tidak dapat mengedit karena anda bukan wali kelas siswa ini.", Toast.LENGTH_LONG).show()
             finish() // Tendang balik, gagalkan buka halaman edit!
             return
         }

@@ -77,7 +77,7 @@ class ProfileFragment : Fragment() {
         profileAvatar = view.findViewById(R.id.profileAvatar)
 
         // ── 🔴 FIX UTAMA: Cek bundle secara ketat & pastikan bukan navigasi tab bawah menu profil ──
-        val hasStudentData = arguments != null && arguments!!.containsKey("studentName") && !arguments?.getString("studentName").isNullOrBlank()
+        val hasStudentData = arguments != null && requireArguments().containsKey("studentName") && !arguments?.getString("studentName").isNullOrBlank()
 
         if (hasStudentData) {
             val actualStudentId = arguments?.getInt("studentId", 0) ?: 0
@@ -306,6 +306,7 @@ class ProfileFragment : Fragment() {
                 putExtra("studentActivityRole", currentActivityRole)
                 putExtra("studentQuote", currentQuote)
                 putExtra("studentFoto", currentFotoUrl)
+                putExtra("studentClassroomId", currentStudentClassroomId)
             }
             startActivity(intent)
         }
